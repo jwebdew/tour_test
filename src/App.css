@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'SKYBORI TTF';
+  src: url('font/SKYBORITTF.eot');
+  src: url('font/SKYBORITTF.eot?#iefix') format('embedded-opentype'),
+      url('font/SKYBORITTF.woff2') format('woff2'),
+      url('font/SKYBORITTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  line-height: 1.3;
+  color: #333;
+  max-width: 767px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'SKYBORI TTF';
+  word-break: keep-all;
+}
+img {
+  display: block;
+}
+.inner {
+  width: calc(100% - 30px);
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+
+header {
+  max-width: 767px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner h1 {
+  height: 40px;
+}
+header .inner h1 a {
+  display: block;
+  height: 100%;
+}
+header .inner h1 a img {
+  height: 100%;
+  object-fit: cover;
+}
+header .inner figure {
+  height: 26px;
+  cursor: pointer;
+}
+header .inner figure img {
+  height: 100%;
+  object-fit: 100%;
+}
+
+
+
+
+
+nav {
+  max-width: 767px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: none;
+}
+nav.on {
+  display: block;
+}
+nav figure {
+  height: 26px;
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav figure img {
+  height: 100%;
+  object-fit: 100%;
+}
+nav ul li {
+  font-size: 24px;
+  padding: 40px 0;
+}
+
+
+
+
+
+.list {
+  padding: 60px 0;
+}
+.list .list_rec {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.list .list_rec .item_rec {
+  width: calc(100% / 4);
+  max-height: 190px;
+  height: 26vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #555;
+}
+.list .list_rec .item_rec:nth-child(1) {
+  color: #00008b;
+}
+.list .list_rec .item_rec:nth-child(2) {
+  background-color: #add8e6;
+}
+.list .list_rec .item_rec:nth-child(3) {
+  color: #00008b;
+}
+.list .list_rec .item_rec:nth-child(4) {
+  background-color: #f08080;
+}
+.list .list_rec .item_rec:nth-child(5) {
+  background-color: #fafad2;
+}
+.list .list_rec .item_rec:nth-child(6) {
+  color: #ff6347;
+}
+.list .list_rec .item_rec:nth-child(7) {
+  background-color: #d3d3d3;
+}
+.list .list_rec .item_rec:nth-child(8) {
+  color: #ff6347;
+}
+.list .list_rec .item_rec figure {
+  width: 60px;
+  height: 60px;
+}
+.list .list_rec .item_rec figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+.item {
+  padding: 100px 0;
+}
+.item:nth-child(odd) {
+  background-color: #f0f8ff;
+}
+.item:nth-child(even) {
+  background-color: #ffffe0;
+}
+.item .inner .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.item .inner .title > span {
+  display: block;
+  padding: 5px 10px;
+  background-color: #ff6347;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.item .inner .title .my {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  cursor: pointer;
+}
+.item .inner .title .my span {
+  color: #ff6347;
+}
+.item .inner .title .my svg.line {
+  display: block;
+}
+.item .inner .title .my svg.fill {
+  display: none;
+}
+.item .inner h4 {
+  font-size: 24px;
+  color: #00008b;
+  margin-bottom: 20px;
+}
+.item .inner > figure {
+  width: 100%;
+  height: 400px;
+  border-radius: 200px 20px 200px 20px;
+  overflow: hidden;
+}
+.item:nth-child(even) .inner > figure {
+  border-radius: 20px 200px 20px 200px;
+}
+.item .inner > figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item .inner .text {
+  padding: 20px;
+}
+.item .inner .text h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.item .inner .text p {
+  margin-bottom: 20px;
+}
+.item .inner .text a {
+  text-decoration: underline;
+  color: #4169e1;
+  position: relative;
+  padding-right: 15px;
+  display: flex;
+  justify-content: right
+}
+.item .inner .text a::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: url('../public/img/arrow.png') center center / 100% no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+footer {
+  max-width: 767px;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  font-size: 18px;
+}
+footer .inner ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .inner ul li {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.memo {
+  color: #ff6347;
+}
+
+
+
+
+
+@media screen and (max-width: 414px) {
+  .list .list_rec .item_rec figure {
+    width: 40px;
+    height: 40px;
+  }
+
+  .item {
+    padding: 50px 0;
+  }
+  .item .inner > figure {
+    height: 260px;
+    border-radius: 100px 10px 100px 10px;
+  }
+  .item:nth-child(even) .inner > figure {
+    border-radius: 10px 100px 10px 100px;
+  }
+}
