@@ -43,7 +43,6 @@ const TourItem = ({article}) => {
         };
     }
     myClick();
-    
     return (
         <div className="item">
             <div className="inner">
