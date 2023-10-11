@@ -1,5 +1,5 @@
 // 정보입력
-
+import styled from "styled-components";
 const TourItem = ({ article }) => {
   const {
     MAIN_TITLE /* 콘텐츠명 */,
@@ -14,13 +14,17 @@ const TourItem = ({ article }) => {
   //     item.style.display = 'block'
   // });
 
+  const lineStyle = {
+    display : 'block'
+  }
+  
     let my = document.querySelectorAll(".my");
     let line = document.querySelectorAll(".line");
     let fill = document.querySelectorAll(".fill");
-
-    line.forEach((item) => {
-      item.style.display = "block";
-    });
+    
+    // line.forEach((item) => {
+    //   item.style.display = "block";
+    // });
     const myClick = () => {
     for (let i = 0; i < my.length; i++) {
       my[i].onclick = function(){
@@ -44,7 +48,7 @@ const TourItem = ({ article }) => {
     //   };
     }
   };
-
+  myClick();
   return (
     <div className="item">
       <div className="inner">
@@ -58,6 +62,7 @@ const TourItem = ({ article }) => {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+               style={lineStyle}
               className="line"
             >
               <path
