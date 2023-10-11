@@ -17,7 +17,7 @@ const TourItem = ({ article }) => {
   const lineStyle = {
     display : 'block'
   }
-  
+
     let my = document.querySelectorAll(".my");
     let line = document.querySelectorAll(".line");
     let fill = document.querySelectorAll(".fill");
@@ -28,7 +28,7 @@ const TourItem = ({ article }) => {
     const myClick = () => {
     for (let i = 0; i < my.length; i++) {
       my[i].onclick = function(){
-          if (line[i].style.display === 'block') {
+          if (line[i].style.display == 'block') {
             
             line[i].style.display = 'none';
             fill[i].style.display = 'block';
@@ -48,7 +48,7 @@ const TourItem = ({ article }) => {
     //   };
     }
   };
-  myClick();
+ 
   return (
     <div className="item">
       <div className="inner">
