@@ -25,7 +25,7 @@ const TourItem = ({ article }) => {
     const lineStyle = {
         display : 'block'
       }
-    const myClick = () => {
+   
     for (let i = 0; i < my.length; i++) {
     //   my[i].onclick = () => {
     //       if (line[i].style.display === 'block') {
@@ -47,14 +47,13 @@ const TourItem = ({ article }) => {
         }
       };
     }
-  };
-//   myClick();
+
   return (
     <div className="item">
       <div className="inner">
         <div className="title">
           <span>{GUGUN_NM}</span>
-          <div className="my" onClick={myClick}>
+          <div className="my">
             <span>MY</span>
             <svg
               width="24"
