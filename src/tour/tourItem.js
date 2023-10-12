@@ -18,10 +18,10 @@ const TourItem = ({article}) => {
         let fill = document.querySelectorAll('.fill');
         
         
+        line.forEach(reset => {
+            reset.style.display = 'block';
+        });
         for (let i = 0; i < my.length; i++) {
-            line.forEach(reset => {
-                reset.style.display = 'block';
-            });
             my[i].onclick = () => {
                 // if (line[i].style.display === 'block') {
                 //   line[i].style.display = 'none';
@@ -41,7 +41,7 @@ const TourItem = ({article}) => {
         };
     };
     
-    myClick();
+    // myClick();
 
     return (
         <div className="item">
