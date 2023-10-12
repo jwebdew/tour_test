@@ -10,15 +10,17 @@ const TourItem = ({article}) => {
         ADDR1 /* 주소 */
     } = article;
 
-    let my = document.querySelectorAll('.my');
-    let line = document.querySelectorAll('.line');
-    let fill = document.querySelectorAll('.fill');
-    
-    // line.forEach(reset => {
-    //     reset.style.display = 'block';
-    // });
+   
 
     const myClick = () => {
+        let my = document.querySelectorAll('.my');
+        let line = document.querySelectorAll('.line');
+        let fill = document.querySelectorAll('.fill');
+        
+        // line.forEach(reset => {
+        //     reset.style.display = 'block';
+        // });
+        
         for (let i = 0; i < my.length; i++) {
             my[i].onclick = () => {
                 // if (line[i].style.display === 'block') {
