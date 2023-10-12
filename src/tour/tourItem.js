@@ -16,12 +16,12 @@ const TourItem = ({article}) => {
         let my = document.querySelectorAll('.my');
         let line = document.querySelectorAll('.line');
         let fill = document.querySelectorAll('.fill');
-        let myChildren = my.childNodes;
+        // let myChildren = my.childNodes;
         
         
-        line.forEach(reset => {
-            reset.style.display = 'block';
-        });
+        // line.forEach(reset => {
+        //     reset.style.display = 'block';
+        // });
         for (let i = 0; i < line.length; i++) {
             my[i].onclick = () => {
                 // if (line[i].style.display === 'block') {
