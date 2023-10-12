@@ -23,20 +23,20 @@ const TourItem = ({article}) => {
 
         for (let i = 0; i < my.length; i++) {
             my[i].onclick = () => {
-                // if (line[i].style.display === 'block') {
-                //   line[i].style.display = 'none';
-                //   fill[i].style.display = 'block';
-                // } else {
-                //   line[i].style.display = 'block';
-                //   fill[i].style.display = 'none';
-                // };
-                if (line[i].style.display === 'none') {
-                  line[i].style.display = 'block';
-                  fill[i].style.display = 'none';
-                } else {
+                if (line[i].style.display === 'block') {
                   line[i].style.display = 'none';
                   fill[i].style.display = 'block';
+                } else {
+                  line[i].style.display = 'block';
+                  fill[i].style.display = 'none';
                 };
+                // if (line[i].style.display === 'none') {
+                //   line[i].style.display = 'block';
+                //   fill[i].style.display = 'none';
+                // } else {
+                //   line[i].style.display = 'none';
+                //   fill[i].style.display = 'block';
+                // };
               };
         };
 
